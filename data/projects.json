@@ -1,0 +1,38 @@
+[
+  {
+    "title": "EQWE-AgriNet: Rice Leaf Disease Classification",
+    "year": "2026",
+    "role": "Research project",
+    "category": "ai",
+    "description": "An explainable, reliability-weighted ensemble of CNN and transformer models that classifies rice leaf diseases. It uses calibrated confidence, Grad-CAM explanations and a reject option that sends uncertain images to an expert.",
+    "tech": ["Python", "PyTorch", "Computer Vision", "Grad-CAM"],
+    "link": ""
+  },
+  {
+    "title": "BangLish Compiler",
+    "year": "2026",
+    "role": "Personal project",
+    "category": "web",
+    "description": "A browser-based toy compiler for a Bangla-English (BangLish) programming language. It includes a code editor, tokenizer, parser and output console, all written in HTML, CSS and JavaScript.",
+    "tech": ["HTML", "CSS", "JavaScript", "Compiler Design"],
+    "link": ""
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "year": "2026",
+    "role": "Course project",
+    "category": "web",
+    "description": "This multi-page website. Built with HTML5, CSS3, jQuery and AJAX, it loads projects from a JSON file and uses a validated contact form. It is hosted on Netlify.",
+    "tech": ["HTML5", "CSS3", "jQuery", "AJAX", "Netlify"],
+    "link": ""
+  },
+  {
+    "title": "Database Programming Practice",
+    "year": "2024",
+    "role": "BTEB certificate course",
+    "category": "database",
+    "description": "Designed relational tables and wrote SQL queries (joins, grouping and sub-queries) in MySQL while completing the BTEB Database Programming course.",
+    "tech": ["MySQL", "SQL"],
+    "link": ""
+  }
+]

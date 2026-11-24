@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubaet Khandokar | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">Rubaet<span>.dev</span></a>
+      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>Contact Me</h1>
+      <p>Have a question or an opportunity? Send me a message.</p>
+    </section>
+
+    <section class="section container two-col">
+      <div>
+        <h2>Get in Touch</h2>
+        <ul class="info-list">
+          <li><strong>Email:</strong> <a href="mailto:khandokar2305101634@diu.edu.bd">khandokar2305101634@diu.edu.bd</a></li>
+          <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Rubaet231" target="_blank" rel="noopener">github.com/Rubaet231</a></li>
+          <li><strong>University:</strong> <a href="https://daffodilvarsity.edu.bd" target="_blank" rel="noopener">Daffodil International University</a></li>
+        </ul>
+      </div>
+
+      <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden><label>Do not fill: <input name="bot-field"></label></p>
+
+        <div class="form-group">
+          <label class="title" for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+          <span class="error" id="name-err">Please enter at least 3 characters.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="title" for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="error" id="email-err">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group">
+          <span class="title" style="font-weight:600;display:block;margin-bottom:6px">I am a</span>
+          <div class="inline-options">
+            <label><input type="radio" name="purpose" value="Recruiter"> Recruiter</label>
+            <label><input type="radio" name="purpose" value="Student"> Student</label>
+            <label><input type="radio" name="purpose" value="Other"> Other</label>
+          </div>
+          <span class="error" id="purpose-err">Please choose one option.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="title" for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="">-- Select a subject --</option>
+            <option>Job / Internship</option>
+            <option>Research Collaboration</option>
+            <option>Project Feedback</option>
+            <option>General Question</option>
+          </select>
+          <span class="error" id="subject-err">Please select a subject.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="title" for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+          <span class="error" id="message-err">Message should be at least 10 characters.</span>
+        </div>
+
+        <div class="form-group">
+          <label><input type="checkbox" name="newsletter" value="yes"> Send me a copy / updates by email</label>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-msg" class="form-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rubaet Khandokar &middot;
+      <a href="https://github.com/Rubaet231" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://daffodilvarsity.edu.bd" target="_blank" rel="noopener">DIU</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

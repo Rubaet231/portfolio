@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubaet Khandokar | Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">Rubaet<span>.dev</span></a>
+      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>My Projects</h1>
+      <p>Research, web and database work</p>
+    </section>
+
+    <section class="section container">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / Research</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+      </div>
+      <!-- Project cards are loaded with AJAX from data/projects.json -->
+      <div id="project-grid" class="cards">
+        <p>Loading projects...</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Project Summary</h2>
+      <table>
+        <thead><tr><th>#</th><th>Project</th><th>Main Technology</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>EQWE-AgriNet</td><td>Python, PyTorch</td><td>In progress</td></tr>
+          <tr><td>2</td><td>BangLish Compiler</td><td>JavaScript</td><td>Completed</td></tr>
+          <tr><td>3</td><td>Portfolio Website</td><td>HTML, CSS, jQuery</td><td>Completed</td></tr>
+          <tr><td>4</td><td>Database Programming Practice</td><td>MySQL</td><td>Completed</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rubaet Khandokar &middot;
+      <a href="https://github.com/Rubaet231" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://daffodilvarsity.edu.bd" target="_blank" rel="noopener">DIU</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
