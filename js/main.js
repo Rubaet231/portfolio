@@ -103,6 +103,33 @@ $(function () {
       });
   });
 
+  /* 8. Animated counters in the hero */
+  $(".count").each(function () {
+    var $c = $(this), target = +$c.data("target");
+    $({ n: 0 }).delay(900).animate({ n: target }, {
+      duration: 1500, step: function (now) { $c.text(Math.ceil(now)); }
+    });
+  });
+
+  /* 9. Shrink nav + show back-to-top button on scroll */
+  $(window).on("scroll", function () {
+    var y = $(this).scrollTop();
+    $(".site-header").toggleClass("scrolled", y > 40);
+    $(".to-top").toggleClass("show", y > 400);
+  });
+  $(".to-top, .scroll-down").on("click", function (e) {
+    e.preventDefault();
+    var top = $(this).hasClass("to-top") ? 0 : $("#what").offset().top - 70;
+    $("html, body").animate({ scrollTop: top }, 600);
+  });
+
+  /* 10. Stagger the reveal of cards and gallery items */
+  $(".cards > .card, .gallery > figure").each(function () {
+    $(this).css("transition-delay", ($(this).index() * 0.12) + "s");
+  });
+  // remove the delay afterwards so hover effects stay instant
+  setTimeout(function () { $(".cards > .card, .gallery > figure").css("transition-delay", ""); }, 2000);
+
   /* Footer year */
   $("#year").text(new Date().getFullYear());
 });

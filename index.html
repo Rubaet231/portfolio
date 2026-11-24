@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Rubaet Khandokar – CSE undergraduate, software developer and computer vision researcher.">
   <title>Rubaet Khandokar | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,21 +26,35 @@
 
   <main>
     <section class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
       <div class="container hero-grid">
-        <div>
-          <p>Hello, I am</p>
-          <h1>Rubaet <span>Khandokar</span></h1>
-          <p class="typed" aria-live="polite"></p>
+        <div class="hero-text">
+          <p class="hello"><span class="wave">&#128075;</span> Hello, I am</p>
+          <h1>Rubaet <span class="grad-text">Khandokar</span></h1>
+          <p class="typed-line">&gt; <span class="typed" aria-live="polite"></span><span class="cursor">|</span></p>
           <p class="tagline">A Computer Science &amp; Engineering undergraduate at Daffodil International University.
             I build software and work on computer vision research for agriculture.</p>
           <a href="projects.html" class="btn">View My Work</a>
           <a href="contact.html" class="btn outline">Contact Me</a>
+          <div class="stats">
+            <div><strong class="count" data-target="5">0</strong><span>Languages</span></div>
+            <div><strong class="count" data-target="4">0</strong><span>Projects</span></div>
+            <div><strong class="count" data-target="6">0</strong><span>Awards</span></div>
+          </div>
         </div>
-        <img src="profile.png" alt="Photo of Rubaet Khandokar" class="hero-photo">
+        <div class="photo-wrap">
+          <div class="photo-frame">
+            <img src="profile.png" alt="Photo of Rubaet Khandokar" class="hero-photo">
+          </div>
+          <span class="badge badge-1">&#129302; CV Researcher</span>
+          <span class="badge badge-2">&#127891; GPA 5.00</span>
+          <span class="badge badge-3">&#128187; Developer</span>
+        </div>
       </div>
+      <a href="#what" class="scroll-down" aria-label="Scroll down"><span></span></a>
     </section>
 
-    <section class="section container">
+    <section class="section container" id="what">
       <h2>What I Do</h2>
       <p class="lead">A quick look at the areas I focus on.</p>
       <div class="cards">
@@ -68,6 +84,8 @@
       <p style="margin-top:18px"><a href="achievements.html">See all achievements &rarr;</a></p>
     </section>
   </main>
+
+  <a href="#" class="to-top" aria-label="Back to top">&#8593;</a>
 
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Rubaet Khandokar &middot;
